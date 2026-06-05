@@ -29,26 +29,32 @@ p, a, button{
     font-family: "Inika"
 }
 
-.behandlingerMain{
-    padding: var(--bigSpacer) 15rem;
-}
+
+
+
 
 /* BEHANDLINGER */
 
 .behandlingerBody{
     background-color: var(--lightBlue);
 
+    .behandlingerMain{
+    padding: var(--bigSpacer) ;
+    max-width: 1200px;
+    margin: 0 auto; 
+}
+
     h1, p{
         justify-self: center;
     }
 }
-.behandling{
+.enkeltBehandling{
     display: grid;
   padding: 1rem;
 
     img{
         height: 218px;
-        width: 300px ;
+        width: 300px !important;
         padding: var(--SmallSpacer);
         grid-column: 1;
         object-fit: cover;
@@ -56,15 +62,24 @@ p, a, button{
           border-radius: 15px;
     }
 
+    a {
+            color: var(--darkBrown);
+            text-decoration: none;
+            background-color: #cbb57a;
+            box-shadow: 0px 2px 5px  0px #38364d;
+            padding: var(--SmallSpacer) 1rem;
+
+    }
+
     .behandlingTekst{
         grid-column: 2;
-       
         margin-top: -10px;
         height: 200px;
         color: var(--darkBlue);
         border: 1px solid var(--darkBlue);
         border-radius: 8px;
         padding: var(--SmallSpacer) ;
+        max-width: 100%;
      
         h2{
               border-bottom: 2px solid var(--gold);
@@ -74,26 +89,162 @@ p, a, button{
         }
         p{
             margin-top: -20px;
-            display:-webkit-box;
-        -webkit-box-orient:vertical;
-       line-clamp: 1;
-        overflow: hidden;
-        text-overflow:ellipsis;
+
         height: 100px;
         }
     }
 }
 
+/* ENKELTE BEHANDLINGSSIDE */
 
+.behandlingBody{
+    background-color: var(--lightBlue);
 
+    .bMain{
+         padding: var(--bigSpacer) 5rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
 
-@media (max-width: 1100px) {
-.behandlingerMain{
-    padding: var(--SmallSpacer);
+            h1, h2{
+            align-self:flex-start;
+            margin-left: 100px;
+            color: var(--darkBlue);
+        }
 
+        h2{
+            align-self: center;
+            text-align: center;
+            margin-top: var(--MediumSpacer);
+            margin-left: 0;
+        }
+    }
+
+    header{
+        height: 50vh;
+        img{
+            object-fit: cover;
+            max-height: 100%;
+                    width: 100%;
+        }
+    }
 }
 
-.behandling{
+    .behandling{
+       display: flex;
+    justify-content: center;
+    gap: 2rem;
+
+
+        .bTekst{
+        max-width: 100%;
+        font-size: 18px;
+        color: var(--darkBlue);
+       p{
+            line-break:normal;
+       }
+
+       h1{
+        margin: 0;
+       }
+        }
+    .aside{
+      flex-direction: column;
+      max-width: 850px;
+      min-width: 300px;
+
+      ul{
+        list-style-type: none;
+        background-color: var(--darkBlue);
+        padding: var(--MediumSpacer);
+        list-style-position: outside;
+
+        li{
+            color:var(--gold);
+            line-height: 40px;
+            font-size: 20px;
+            line-break:auto;
+        }
+      }
+     a{
+            color: var(--darkBrown);
+            text-decoration: none;
+            background-color: #cbb57a;
+            box-shadow: 0px 2px 5px  0px #38364d;
+            padding: var(--SmallSpacer);
+            flex-direction: flex-end;
+            display: flex;
+           justify-content: center;
+            
+        }
+                a:hover{
+                color: var(--gold);
+                background-color: var(--darkBlue);
+                transition: 0.3s;
+                
+            }
+      }
+    }
+
+    .related{
+        display: flex;
+       justify-content:space-between;
+       gap: 2rem;
+       flex-wrap: wrap;
+        margin-top: var(--SmallSpacer);
+        .relatedCard{
+            display: flex;
+            flex-direction: column;
+            max-width: 350px;
+            
+            img{
+                height: 218px;
+                width: 350px ;
+                padding: var(--SmallSpacer);
+                object-fit: cover;
+                margin-top:-20px;
+                border-radius: 15px;
+            }
+
+            a{
+            color: var(--darkBrown);
+            text-decoration: none;
+            background-color: #cbb57a;
+            padding: 8px 0px;
+            border-radius: 5px;
+            flex-direction: flex-end;
+            display: flex;
+           justify-content: center;
+           max-width: 100%;
+           box-shadow:  0px 2px 5px  0px #38364d;
+
+            }
+
+            a:hover{
+                color: var(--gold);
+                background-color: var(--darkBlue);
+                transition: 0.3s;
+                
+            }
+        }
+    }
+
+@media (max-width: 1400px) {
+   .behandlingBody .related{
+       gap: 1rem;
+       justify-content:center;
+    margin-top: 20px;
+}
+}
+
+
+@media (max-width: 1000px) {
+    /* Alle Behandlinger */
+.behandlingerMain{
+    padding: var(--SmallSpacer);
+}
+
+.behandlinger{
     display: flex;
     flex-direction: column;
     
@@ -106,5 +257,77 @@ p, a, button{
 .behandlingTekst{
 font-size: 16px;
 }
+/* Enkelte behandlinger */
+
+  .behandling{
+ flex-direction: column;
+
+ .bMain .beskrivelse{
+     max-width: 100%;
+ }
+  }
+
+  .behandlingBody .bMain {
+             h1, h2{
+                text-align:left;
+                margin: 0;
+                margin-left: 0;
+        }
+  }
+
+  .aside{
+    width: 100%;
+    align-self: center;
    
+
+    a{
+        display: block;
+        padding:  var(--SmallSpacer) ;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+  }
+
+     .behandlingBody .related{
+       display: flex;
+       flex-direction: column;
+
+               .relatedCard{
+            max-width: 100%;
+            img{
+                height: 250px;
+                width: 500px ;
+            }
+}
+
+}
+
+
+
+
+@media (max-width: 600px) {
+    .behandlingBody header {
+        img{
+            width: 600px;
+        }
+    }
+    .behandlingBody .bMain{
+        padding: var(--SmallSpacer);
+
+        .related img{   
+                height: 250px;
+                width: 600px ;
+            .related a{
+                        display: block;
+        padding:  var(--SmallSpacer) ;
+        text-align: center;
+        margin-bottom: 3rem;
+            }
+
+
+
+  
+    }
+
+}}
 }
