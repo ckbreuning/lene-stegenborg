@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lene Stegenborg - Praktisk Info</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/praktiskinfo.css" />
+    <script src="./assets/js/praktiskinfo.js" defer></script>
+    <!-- Google Fonts: Inika og Inria Serif — https://fonts.google.com -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <!-- Font Awesome ikoner — https://fontawesome.com/docs/web/use-with/cdn-js -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body class="praktiskBody">
+
+    <!-- HEADER / NAVIGATION -->
+    <header class="siteHeader">
+        <div class="headerInner">
+            <a href="index.html" class="logo">
+                <span class="logoName">Lene Stegenborg<br><small>Spirituel virksomheds coach</small></span>
+            </a>
+            <nav class="desktopNav">
+                <a href="index.html">Hjem</a>
+                <a href="behandlinger.html">Behandlinger</a>
+                <a href="praktiskinfo.html" class="active">Praktisk Info</a>
+                <a href="omMig.html">Om Mig</a>
+                <a href="kontakt.html">Kontakt</a>
+            </nav>
+            <button class="hamburger" id="hamburger" aria-label="Åbn menu">&#9776;</button>
+        </div>
+        <nav class="mobileNav" id="mobileNav">
+            <a href="index.html">Hjem</a>
+            <a href="behandlinger.html">Behandlinger</a>
+            <a href="praktiskinfo.html" class="active">Praktisk Info</a>
+            <a href="omMig.html">Om Mig</a>
+            <a href="kontakt.html">Kontakt</a>
+        </nav>
+    </header>
+
+    <!-- MAIN INDHOLD -->
+    <main class="praktiskMain">
+        <h1>Praktisk Information</h1>
+
+        <section class="praktiskGrid">
+
+            <!-- VENSTRE: Transport -->
+            <div class="transport">
+                <h2>Parkering og transport</h2>
+                <ul class="transportListe">
+                    <li>
+                        <!-- Font Awesome: fa-square-parking — https://fontawesome.com/icons/square-parking -->
+                        <span class="transportIkon"><i class="fa-solid fa-square-parking"></i></span>
+                        <div>
+                            <strong>Parkering</strong>
+                            <p>Gratis parkering foran klinikken</p>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- Font Awesome: fa-bus — https://fontawesome.com/icons/bus -->
+                        <span class="transportIkon"><i class="fa-solid fa-bus"></i></span>
+                        <div>
+                            <strong>Bus</strong>
+                            <p>Linje 00 — stop: Klinikkens Vej</p>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- Font Awesome: fa-train — https://fontawesome.com/icons/train -->
+                        <span class="transportIkon"><i class="fa-solid fa-train"></i></span>
+                        <div>
+                            <strong>Tog</strong>
+                            <p>5 min fra stationen</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- HØJRE: FAQ Accordion -->
+            <div class="faq">
+                <h2>Ofte stillede spørgsmål</h2>
+
+                <div class="accordionItem">
+                    <button class="accordionKnap" aria-expanded="false">
+                        Kan jeg bestille online?
+                        <!-- Font Awesome: fa-chevron-down / fa-chevron-up skifter via JS — https://fontawesome.com/icons/chevron-down -->
+                        <i class="fa-solid fa-chevron-down accordionPil"></i>
+                    </button>
+                    <div class="accordionIndhold">
+                        <p>Ja, du kan bestille tid direkte via vores online booking på hjemmesiden. Vælg den behandling du ønsker og find en ledig tid.</p>
+                    </div>
+                </div>
+
+                <div class="accordionItem">
+                    <button class="accordionKnap" aria-expanded="false">
+                        Hvad skal jeg medbringe?
+                        <!-- Font Awesome: fa-chevron-down / fa-chevron-up skifter via JS — https://fontawesome.com/icons/chevron-down -->
+                        <i class="fa-solid fa-chevron-down accordionPil"></i>
+                    </button>
+                    <div class="accordionIndhold">
+                        <p>Her er svar på hvad du skal medbringe til den relevante dagsordenspunktet. Hvad koster en behandling?</p>
+                    </div>
+                </div>
+
+                <div class="accordionItem">
+                    <button class="accordionKnap" aria-expanded="false">
+                        Er der adgang for kørestole?
+                        <!-- Font Awesome: fa-chevron-down / fa-chevron-up skifter via JS — https://fontawesome.com/icons/chevron-down -->
+                        <i class="fa-solid fa-chevron-down accordionPil"></i>
+                    </button>
+                    <div class="accordionIndhold">
+                        <p>Ja, klinikken er fuldt tilgængelig for kørestolsbrugere. Der er niveaufri adgang fra parkeringspladsen og ind i lokalet.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Kontakt mig knap (mobil) -->
+        <div class="kontaktMigWrapper">
+            <a href="kontakt.html" class="kontaktMigKnap">Kontakt mig</a>
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="siteFooter">
+        <div class="footerInner">
+            <div class="footerLogo">
+                <span class="logoName">Lene Stegenborg<br><small>Spirituel virksomheds coach</small></span>
+            </div>
+            <div class="footerKontakt">
+                <!-- Font Awesome: fa-phone — https://fontawesome.com/icons/phone -->
+                <p><i class="fa-solid fa-phone"></i> +45 53294999</p>
+                <!-- Font Awesome: fa-envelope — https://fontawesome.com/icons/envelope -->
+                <p><i class="fa-solid fa-envelope"></i> ls@lene-stegenborg.dk</p>
+                <p>CVR: 36298006</p>
+                <!-- Font Awesome: fa-location-dot — https://fontawesome.com/icons/location-dot -->
+                <p><i class="fa-solid fa-location-dot"></i> Lyngbyvej 54b, 9520 Skørping, Danmark</p>
+            </div>
+            <div class="footerKort">
+                <!-- Google Maps embed iframe — https://developers.google.com/maps/documentation/embed/get-started -->
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2166.0!2d10.001!3d57.001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTfCsDAwJzAwLjAiTiAxMMKwMDAnMDAuMCJF!5e0!3m2!1sda!2sdk!4v1620000000000!5m2!1sda!2sdk"
+                    width="100%"
+                    height="200"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Kort">
+                </iframe>
+            </div>
+        </div>
+        <p class="copyright">© 2026 Lene Stegenborg</p>
+    </footer>
+
+</body>
+</html>
