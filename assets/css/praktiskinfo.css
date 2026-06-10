@@ -1,0 +1,336 @@
+/* ===== PRAKTISK INFO SIDE ===== */
+
+.praktiskBody {
+    background-color: var(--lightBlue);
+}
+
+/* --- HEADER (delt med kontakt) --- */
+.siteHeader {
+    background-color: var(--darkBlue);
+    padding: 0.8rem 4rem;
+}
+
+.headerInner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    text-decoration: none;
+    color: var(--gold);
+}
+
+.logoLetters {
+    font-family: "Inria Serif", serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--gold);
+    border: 2px solid var(--gold);
+    padding: 0.1rem 0.5rem;
+    border-radius: 4px;
+}
+
+.logoName {
+    font-family: "Inria Serif", serif;
+    font-size: 0.85rem;
+    color: var(--gold);
+    line-height: 1.3;
+}
+
+.logoName small {
+    font-size: 0.7rem;
+    color: #b8a06a;
+}
+
+.desktopNav {
+    display: flex;
+    gap: 2rem;
+}
+
+.desktopNav a {
+    color: white;
+    text-decoration: none;
+    font-family: "Inika", serif;
+    font-size: 1rem;
+    transition: color 0.2s;
+}
+
+.desktopNav a:hover,
+.desktopNav a.active {
+    color: var(--gold);
+    text-decoration: underline;
+}
+
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+.mobileNav {
+    display: none;
+    flex-direction: column;
+    padding: 1rem 2rem;
+    gap: 1rem;
+    background-color: var(--darkBlue);
+}
+
+.mobileNav.åben {
+    display: flex;
+}
+
+.mobileNav a {
+    color: white;
+    text-decoration: none;
+    font-family: "Inika", serif;
+    font-size: 1.1rem;
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+    padding-bottom: 0.5rem;
+}
+
+.mobileNav a.active {
+    color: var(--gold);
+}
+
+/* --- MAIN --- */
+.praktiskMain {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 3rem 2rem 4rem;
+}
+
+.praktiskMain h1 {
+    text-align: center;
+    font-size: 2.2rem;
+    color: var(--darkBlue);
+    margin-bottom: 2.5rem;
+}
+
+/* --- GRID --- */
+.praktiskGrid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 4rem;
+    align-items: start;
+}
+
+/* --- TRANSPORT --- */
+.transport h2,
+.faq h2 {
+    font-size: 1.2rem;
+    color: var(--darkBlue);
+    border-bottom: 1px solid var(--gold);
+    padding-bottom: 0.4rem;
+    margin-bottom: 1.2rem;
+}
+
+.transportListe {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.transportListe li {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.transportIkon {
+    background-color: var(--darkBlue);
+    color: white;
+    font-family: "Inika", serif;
+    font-size: 0.85rem;
+    font-weight: 700;
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.transportListe strong {
+    font-family: "Inria Serif", serif;
+    color: var(--darkBlue);
+    display: block;
+    margin-bottom: 0.1rem;
+}
+
+.transportListe p {
+    margin: 0;
+    font-family: "Inika", serif;
+    font-size: 0.9rem;
+    color: var(--lightBrown);
+}
+
+/* --- FAQ ACCORDION --- */
+.accordionItem {
+    border-bottom: 1px solid rgba(56, 54, 77, 0.2);
+}
+
+.accordionKnap {
+    width: 100%;
+    background-color: var(--darkBlue);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 1rem 1.2rem;
+    margin-bottom: 0.5rem;
+    font-family: "Inika", serif;
+    font-size: 1rem;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.2s;
+}
+
+.accordionKnap:hover {
+    background-color: #4a4762;
+}
+
+.accordionPil {
+    font-size: 1.3rem;
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+
+.accordionKnap[aria-expanded="true"] .accordionPil {
+    transform: rotate(180deg);
+}
+
+.accordionIndhold {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease, padding 0.2s ease;
+    padding: 0 1.2rem;
+}
+
+.accordionIndhold.åben {
+    max-height: 300px;
+    padding: 0.8rem 1.2rem;
+}
+
+.accordionIndhold p {
+    margin: 0;
+    font-family: "Inika", serif;
+    font-size: 0.95rem;
+    color: var(--darkBlue);
+    line-height: 1.6;
+}
+
+/* --- KONTAKT MIG KNAP --- */
+.kontaktMigWrapper {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.kontaktMigKnap {
+    display: inline-block;
+    background-color: var(--gold);
+    color: var(--darkBlue);
+    font-family: "Inika", serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: 0.8rem 3rem;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+.kontaktMigKnap:hover {
+    background-color: #b89f5e;
+}
+
+/* --- FOOTER --- */
+.siteFooter {
+    background-color: var(--darkBlue);
+    color: var(--gold);
+    padding: 2.5rem 4rem 1rem;
+}
+
+.footerInner {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+    margin-bottom: 1.5rem;
+}
+
+.footerLogo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.footerLogo .logoLetters {
+    font-size: 2.5rem;
+}
+
+.footerKontakt p {
+    font-family: "Inika", serif;
+    font-size: 0.9rem;
+    color: white;
+    margin: 0.3rem 0;
+}
+
+.footerKort {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.copyright {
+    text-align: center;
+    font-family: "Inika", serif;
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.5);
+    border-top: 1px solid rgba(255,255,255,0.15);
+    padding-top: 1rem;
+    margin: 0;
+}
+
+/* ===== RESPONSIVT (MOBIL) ===== */
+@media (max-width: 768px) {
+    .siteHeader {
+        padding: 0.8rem 1.2rem;
+    }
+
+    .desktopNav {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .praktiskMain {
+        padding: 2rem 1rem 3rem;
+    }
+
+    .praktiskGrid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .footerInner {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .siteFooter {
+        padding: 2rem 1.2rem 1rem;
+    }
+}
