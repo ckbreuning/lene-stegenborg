@@ -1,11 +1,3 @@
-// Hamburger-menu toggle
-const hamburger = document.getElementById("hamburger");
-const mobileNav = document.getElementById("mobileNav");
-
-hamburger.addEventListener("click", function () {
-    mobileNav.classList.toggle("åben");
-});
-
 // Formular-validering
 const form = document.getElementById("kontaktForm");
 

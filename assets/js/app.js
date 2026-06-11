@@ -112,8 +112,12 @@ const container2 = document.querySelector(".behandlingBody")
 
 // function der looper igennem hver eneste behandling
 
+
 //replace property gør sådan at der er linebreak i teksten sådan som det blev sat ind, som gør teksten mere brugervenlig
 function visBehandling(behandling) {
+
+    document.title = `${behandling.acf.behandling} | Lene Stegenborg`
+
     container2.innerHTML =
         `
      <body class="behandlingBody">

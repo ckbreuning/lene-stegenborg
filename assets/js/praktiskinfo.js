@@ -1,11 +1,3 @@
-// Hamburger-menu toggle
-const hamburger = document.getElementById("hamburger");
-const mobileNav = document.getElementById("mobileNav");
-
-hamburger.addEventListener("click", function () {
-    mobileNav.classList.toggle("åben");
-});
-
 // FAQ Accordion
 // aria-expanded bruges til tilgængelighed (screen readers) — https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-expanded
 const accordionKnapper = document.querySelectorAll(".accordionKnap");
