@@ -7,11 +7,152 @@
 	<title>Lene Stegenborg - Forside</title>
 	<link rel="stylesheet" href="./assets/css/style.css" />
 	<script src="./assets/js/app.js" defer></script>
+	<script src="./assets/js/forside.js" defer></script>
+	<!-- Google Fonts: Inika og Inria Serif — https://fonts.google.com -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+		rel="stylesheet">
+	<!-- Font Awesome ikoner — https://fontawesome.com/docs/web/use-with/cdn-js -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 
-<body></body>
+<body>
+	<!--  NAV  -->
+	<div class="site-nav">
+		<nav class="nav-inner">
+			<a href="./index.html" class="nav-logo">
+				<img src="./assets/img/logo.webp" alt="Lene Stegenborg – Spirituel virksomheds coach">
+			</a>
+			<ul class="nav-links">
+				<li><a href="./index.html">Hjem</a></li>
+				<li><a href="./behandlinger.html">Behandlinger</a></li>
+				<li><a href="./praktiskinfo.html">Praktisk Info</a></li>
+				<li><a href="./om-mig.html">Om Mig</a></li>
+				<li><a href="./kontakt.html">Kontakt</a></li>
+			</ul>
+			<div class="burgermenu">
+				<i class="fa-solid fa-bars"></i>
+				<i class="fa-solid fa-xmark"></i>
+			</div>
+		</nav>
+		<div class="dropdown">
+			<a href="./index.html">Hjem</a>
+			<a href="./behandlinger.html">Behandlinger</a>
+			<a href="./praktiskinfo.html">Praktisk Info</a>
+			<a href="./om-mig.html">Om Mig</a>
+			<a href="./kontakt.html">Kontakt</a>
+		</div>
+	</div>
+
+	<main>
+		<!--  HERO  -->
+		<header class="hero container">
+			<div class="hero-text">
+				<h1>Lene Stegenborg</h1>
+				<p>Jeg, Lene Stegenborg, er født i Aalborg, præcis samme dag som en spirituel sjæl forlod
+					jorden.<br>Mine kompetencer udspringer af en gammel sjæl, der har vandret mange liv. Jeg ser det
+					gode i
+					mennesker og dømmer ingen, da tro er en personlig rejse. Jeg åbner mig for nuet, fortiden og
+					fremtiden, tror på en universel spiritualitet, hvor øjeblikket er i fokus.</p>
+				<p>Den åndelige verden og den fysiske verden er forbundne, udgør uendelig bevidsthed.</p>
+				<div class="hero-buttons">
+					<a href="./kontakt.html" class="btn btn-kontakt">Kontakt mig</a>
+					<a href="./om-mig.html" class="btn btn-laes">Læs mere om hvem jeg er</a>
+				</div>
+			</div>
+			<img class="hero-image" src="./assets/img/lene-stegenborg.webp" alt="Lene Stegenborg">
+		</header>
+
+		<!--  UDVALGTE BEHANDLINGER  -->
+		<section class="treatments container">
+			<div class="treatments-header">
+				<h2>Udvalgte behandlinger</h2>
+				<a href="./behandlinger.html" class="see-all">Se alle behandlinger <i
+						class="fa-solid fa-arrow-right-long"></i></a>
+			</div>
+
+			<div class="treatment-grid">
+			</div>
+
+			<div class="see-all-mobile btn">
+				<a href="./behandlinger.html" class="see-all">Se alle behandlinger <i
+						class="fa-solid fa-arrow-right-long"></i></a>
+			</div>
+		</section>
+
+		<!--  HVAD ER HEALING / KONTAKT  -->
+		<section class="info-section container">
+			<article class="healing">
+				<h2>Hvad er healing?</h2>
+				<p>Healing er en blid og holistisk behandlingsform, der arbejder med kroppens energisystem for at skabe
+					balance mellem krop, sin og sjæl. Gennem healing kan blokeringer og ubalancer løsnes, så energien
+					igen kan flyde frit. Mange oplever en følelse af dyb ro, klarhed og fornyet energi efter en session.
+				</p>
+				<p>En healingssession foregår i rolige og trygge omgivelser. Du ligger afslappet på en briks med tøjet
+					på, mens healingen udføres gennem energi og intuitivt arbejde. Sessionen kan indledes med en kort
+					samtale og afsluttes med refleksion over de oplevelser eller indsigter, der er opstået under
+					behandlingen. Healing tilpasses altid den enkelte persons behov og situation.</p>
+				<div class="healing-buttons">
+					<a href="./praktiskinfo.html" class="btn">Praktisk Information</a>
+				</div>
+			</article>
+
+			<article class="contact">
+				<h2>Kontakt mig</h2>
+				<div class="contact-inner">
+					<div class="contact-text">
+						<p>Hvis du mærker en nysgerrighed eller et kald mod healing eller spirituel coaching, er du
+							hjerteligt velkommen til at tage kontakt.</p>
+						<p>Jeg tilbyder et trygt og nærværende rum, hvor du kan dele det, du står i, og sammen kan vi
+							finde frem til hvad der støtter dig bedst på din vej mod mere balance, klarhed og indre ro.
+						</p>
+						<p>Du er altid velkommen.</p>
+						<div class="btn-wrap">
+							<a href="./kontakt.html" class="btn">Kontakt mig</a>
+						</div>
+					</div>
+					<img class="contact-img" src="./assets/img/lene-stegenborg-i-stol.webp" alt="Lene Stegenborg">
+				</div>
+			</article>
+		</section>
+	</main>
+
+	<!--  FOOTER  -->
+	<footer>
+		<div class="footer-inner">
+			<div class="footer-info">
+				<div class="footer-logo">
+					<img src="./assets/img/logo.webp" alt="Lene Stegenborg – Spirituel virksomheds coach">
+				</div>
+				<div class="footer-contacts">
+					<a class="footer-row" href="tel:+4553294999">
+						<i class="fa-solid fa-phone"></i>
+						+45 53294999
+					</a>
+					<a class="footer-row" href="mailto:ls@lene-stegenborg.dk">
+						<i class="fa-solid fa-envelope"></i>
+						ls@lene-stegenborg.dk
+					</a>
+					<div class="footer-row">
+						<i class="fa-solid fa-building"></i>
+						36298006 (CVR)
+					</div>
+					<div class="footer-row">
+						<i class="fa-solid fa-location-dot"></i>
+						Lyngbyvej 54b, 9520 Skørping, Danmark
+					</div>
+				</div>
+			</div>
+			<div class="footer-map">
+				<iframe
+					src="https://maps.google.com/maps?q=Lyngbyvej+54b,+9520+Sk%C3%B8rping,+Danmark&z=15&output=embed"
+					loading="lazy" title="Kort over Lyngbyvej 54b, 9520 Skørping">
+				</iframe>
+			</div>
+		</div>
+	</footer>
+</body>
 
 </html>

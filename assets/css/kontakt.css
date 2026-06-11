@@ -1,0 +1,342 @@
+/* ===== KONTAKT SIDE ===== */
+
+.kontaktBody {
+    background-color: var(--lightBlue);
+}
+
+/* --- HEADER --- */
+.siteHeader {
+    background-color: var(--darkBlue);
+    padding: 0.8rem 4rem;
+}
+
+.headerInner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    text-decoration: none;
+    color: var(--gold);
+}
+
+.logoName {
+    font-family: "Inria Serif", serif;
+    font-size: 0.85rem;
+    color: var(--gold);
+    line-height: 1.3;
+}
+
+.logoName small {
+    font-size: 0.7rem;
+    color: #b8a06a;
+}
+
+.desktopNav {
+    display: flex;
+    gap: 2rem;
+}
+
+.desktopNav a {
+    color: white;
+    text-decoration: none;
+    font-family: "Inika", serif;
+    font-size: 1rem;
+    transition: color 0.2s;
+}
+
+.desktopNav a:hover,
+.desktopNav a.active {
+    color: var(--gold);
+    text-decoration: underline;
+}
+
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+.mobileNav {
+    display: none;
+    flex-direction: column;
+    padding: 1rem 2rem;
+    gap: 1rem;
+    background-color: var(--darkBlue);
+}
+
+.mobileNav.åben {
+    display: flex;
+}
+
+.mobileNav a {
+    color: white;
+    text-decoration: none;
+    font-family: "Inika", serif;
+    font-size: 1.1rem;
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+    padding-bottom: 0.5rem;
+}
+
+.mobileNav a.active {
+    color: var(--gold);
+}
+
+/* --- MAIN --- */
+.kontaktMain {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 3rem 2rem 4rem;
+}
+
+.kontaktMain h1 {
+    text-align: center;
+    font-size: 2.2rem;
+    color: var(--darkBlue);
+    margin-bottom: 2.5rem;
+}
+
+.kontaktGrid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+/* --- INFO-KOLONNEN --- */
+.kontaktInfo h2 {
+    font-size: 1.1rem;
+    color: var(--darkBlue);
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid var(--gold);
+    padding-bottom: 0.3rem;
+}
+
+.infoListe {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem;
+}
+
+.infoListe li {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-family: "Inika", serif;
+    font-size: 0.9rem;
+    color: var(--darkBlue);
+    padding: 0.3rem 0;
+}
+
+.ikon {
+    font-size: 1rem;
+    min-width: 1.4rem;
+    color: var(--darkBlue);
+}
+
+.aabningstider {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.5rem;
+    font-family: "Inika", serif;
+    font-size: 0.9rem;
+    color: var(--darkBlue);
+}
+
+.aabningstider td {
+    padding: 0.25rem 0;
+}
+
+.aabningstider td:first-child {
+    font-weight: bold;
+    padding-right: 1.5rem;
+}
+
+.aabningstider tr {
+    border-bottom: 1px solid #dce5f0;
+}
+
+.kortWrapper {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* --- FORMULAR --- */
+.kontaktFormular {
+    background-color: var(--darkBlue);
+    border-radius: 10px;
+    padding: 2rem 2.5rem;
+}
+
+.formGruppe {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.2rem;
+}
+
+.formGruppe label {
+    font-family: "Inika", serif;
+    font-size: 0.9rem;
+    color: white;
+    margin-bottom: 0.3rem;
+}
+
+.formGruppe input,
+.formGruppe textarea {
+    background-color: var(--darkBlue);
+    border: 1px solid rgba(255,255,255,0.4);
+    border-radius: 5px;
+    padding: 0.6rem 0.8rem;
+    color: white;
+    font-family: "Inika", serif;
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.formGruppe input:focus,
+.formGruppe textarea:focus {
+    border-color: var(--gold);
+}
+
+.formGruppe input::placeholder,
+.formGruppe textarea::placeholder {
+    color: rgba(255,255,255,0.4);
+}
+
+.formGruppe textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.fejl {
+    color: #f08080;
+    font-family: "Inika", serif;
+    font-size: 0.8rem;
+    margin-top: 0.25rem;
+    min-height: 1rem;
+}
+
+.sendKnap {
+    width: 100%;
+    background-color: var(--gold);
+    color: var(--darkBlue);
+    border: none;
+    border-radius: 6px;
+    padding: 0.8rem;
+    font-family: "Inika", serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.sendKnap:hover {
+    background-color: #b89f5e;
+}
+
+.sendKnap:active {
+    transform: scale(0.98);
+}
+
+.successBesked {
+    display: none;
+    color: #90ee90;
+    text-align: center;
+    font-family: "Inika", serif;
+    margin-top: 0.8rem;
+}
+
+.successBesked.synlig {
+    display: block;
+}
+
+/* --- FOOTER --- */
+.siteFooter {
+    background-color: var(--darkBlue);
+    color: var(--gold);
+    padding: 2.5rem 4rem 1rem;
+}
+
+.footerInner {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+    margin-bottom: 1.5rem;
+}
+
+.footerLogo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: var(--gold);
+}
+
+.footerKontakt p {
+    font-family: "Inika", serif;
+    font-size: 0.9rem;
+    color: white;
+    margin: 0.3rem 0;
+}
+
+.footerKontakt i {
+    color: var(--gold);
+    margin-right: 0.3rem;
+}
+
+.footerKort {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.copyright {
+    text-align: center;
+    font-family: "Inika", serif;
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.5);
+    border-top: 1px solid rgba(255,255,255,0.15);
+    padding-top: 1rem;
+    margin: 0;
+}
+
+/* ===== RESPONSIVT (MOBIL) ===== */
+@media (max-width: 768px) {
+    .siteHeader {
+        padding: 0.8rem 1.2rem;
+    }
+
+    .desktopNav {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .kontaktMain {
+        padding: 2rem 1rem 3rem;
+    }
+
+    .kontaktGrid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .footerInner {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .siteFooter {
+        padding: 2rem 1.2rem 1rem;
+    }
+}
