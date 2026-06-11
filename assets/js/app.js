@@ -181,6 +181,39 @@ function visBehandling(behandling) {
 </section>
 
 </main>
+<footer>
+		<div class="footer-inner">
+			<div class="footer-info">
+				<div class="footer-logo">
+					<img src="./assets/img/logo.webp" alt="Lene Stegenborg – Spirituel virksomheds coach">
+				</div>
+				<div class="footer-contacts">
+					<a class="footer-row" href="tel:+4553294999">
+						<i class="fa-solid fa-phone"></i>
+						+45 53294999
+					</a>
+					<a class="footer-row" href="mailto:ls@lene-stegenborg.dk">
+						<i class="fa-solid fa-envelope"></i>
+						ls@lene-stegenborg.dk
+					</a>
+					<div class="footer-row">
+						<i class="fa-solid fa-building"></i>
+						36298006 (CVR)
+					</div>
+					<div class="footer-row">
+						<i class="fa-solid fa-location-dot"></i>
+						Lyngbyvej 54b, 9520 Skørping, Danmark
+					</div>
+				</div>
+			</div>
+			<div class="footer-map">
+				<iframe
+					src="https://maps.google.com/maps?q=Lyngbyvej+54b,+9520+Sk%C3%B8rping,+Danmark&z=15&output=embed"
+					loading="lazy" title="Kort over Lyngbyvej 54b, 9520 Skørping">
+				</iframe>
+			</div>
+		</div>
+	</footer>
 </body>
 
     `
