@@ -857,6 +857,126 @@ a.footer-row:hover {
 
 }
       
+ /* ── OM MIG SECTION ── */
+    .om-mig {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: var(--bigSpacer) 2rem var(--MediumSpacer);
+      display: grid;
+      grid-template-columns: 1fr 220px;
+      gap: 2.5rem;
+      align-items: start;
+      
+    }
+.om-mig-img {
+        width: 100%;
+        object-fit: cover;
+    }
+      /* ── MISSION ── */
+    .mission {
+      background: var(--lightBlue);
+      padding: var(--MediumSpacer) 2rem;
+    }
+    .mission-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 220px 1fr;
+      gap: 2.5rem;
+      align-items: start;
+    }
+    .mission-img {
+        width: 100%;
+        object-fit: cover;
+        min-height: 250px;
+        
+    }
+
+     /* ── UDDANNELSE ── */
+.uddannelse {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--bigSpacer) 2rem;
+}
+     .uddannelse h2 { 
+    font-size: 1.8rem;
+    margin: 0 0 1.25rem;
+  
+    
+
+    
+    }
+    .uddannelse p {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1.1rem 1.5rem;
+     background: var(--darkBlue);
+      color: var(--gold);
+      font-size: 1rem;
+
+    }
+  
+    
+   
+
+    
+    /* ── REVIEWS ── */
+    .reviews {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: var(--bigSpacer) 2rem;
+    }
+    .reviews h2 { font-size: 1.8rem; color: var(--darkBlue); margin: 0 0 1.25rem; }
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.25rem;
+    }
+    .review-card {
+      background: var(--lightBlue);
+      border-radius: 8px;
+      padding: 1.25rem;
+      border: 1px solid var(--skyBlue);
+    }
+    .stars { color: var(--gold); font-size: 1rem; margin-bottom: 0.5rem; }
+    .review-card p { font-size: 0.85rem; line-height: 1.6; color: var(--lightBrown); margin: 0 0 0.75rem; }
+    .reviewer { font-size: 0.8rem; font-style: italic; color: var(--darkBrown); }
+    
+     /* ── KONTAKT MIG ── */
+    .kontakt-section {
+      
+      padding: var(--MediumSpacer) 2rem;
+      text-align: center;
+    }
+    .kontakt-section h2 { color: #fff; font-size: 1.8rem; margin: 0 0 0.5rem; }
+    .btn-kontakt {
+      display: inline-block;
+      background: var(--gold);
+    color: black;
+      font-family: "Inika", serif;
+      font-size: 1rem;
+      padding: 0.8rem 2.5rem;
+      border-radius: 4px;
+      border: none;
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+    .btn-kontakt:hover { opacity: 0.85; }
+
+    @media(max-width: 768px){
+          /* ── OM MIG ── */
+
+      .om-mig{
+        grid-template-columns: 1fr;
+        padding: 2rem 1.25rem ;
+      }
+      .om-mig-img{
+        order: -1;
+        object-position: top;
+        width: 70%;
+        margin: 0 auto;
+        display :block;
+      }
        /* ── MISSION ── */
   .mission {
     padding: 2rem 1.25rem;
@@ -886,4 +1006,5 @@ a.footer-row:hover {
   .kontakt-section {
     padding: 2rem 1.25rem;
   }
-
+}
+    
