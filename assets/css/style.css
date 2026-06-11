@@ -756,23 +756,53 @@ a.footer-row:hover {
 @media (max-width: 1000px) {
 
     /* Alle Behandlinger */
-    .behandlingerMain {
-        padding: var(--SmallSpacer);
+    .behandlingerBody .behandlingerMain {
+        padding: 10px;
+        
+    }
+
+    .enkeltBehandling{
+        display: grid;
+        grid-template-columns: 1fr;
+
+        img{
+            width: 100% !important;
+            grid-column: 1;
+            height: auto;
+            height: 200px;
+        }
+    }
+
+    .enkeltBehandling .behandlingTekst{
+        grid-column: 1;
+        overflow:hidden;
+        height: auto;
     }
 
     .behandlinger {
-        display: flex;
-        flex-direction: column;
+display: grid;
+grid-template-columns: 1fr;
+gap: 1rem;
 
         img {
             width: 100%;
             object-fit: cover;
         }
+
+        a{
+            display: flex;
+            flex-direction: flex-end;
+        }
     }
 
     .behandlingTekst {
         font-size: 16px;
+        line-break: auto;
+        height: 40px;
+        overflow-y: hidden;
     }
+
+
 
     /* Enkelte behandlinger */
 

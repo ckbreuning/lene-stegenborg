@@ -64,9 +64,12 @@ function renderArticles(posts) {
                 <img src="${post.acf.billede.sizes.medium}" alt="">
                 <div class="behandlingTekst">
                     <h2>${post.acf.behandling}</h2>
-                    <p>${truncateWords(post.acf.beskrivelse, 50)}</p>
-                    <a href="behandling.html?slug=${post.slug}">Læs mere</a>
+                    <p>${
+                        truncateWords(post.acf.beskrivelse, 50)
+                    }</p>
+
                 </div>
+               <a href="behandling.html?slug=${post.slug}">Læs mere</a>
             </article>
         `
     })
