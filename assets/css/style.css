@@ -856,3 +856,34 @@ a.footer-row:hover {
     }
 
 }
+      
+       /* ── MISSION ── */
+  .mission {
+    padding: 2rem 1.25rem;
+  }
+  .mission-inner {
+    grid-template-columns: 1fr;
+  }
+  .mission-img {
+    max-height: 300px;
+    object-position: top;
+  }
+
+  /* ── UDDANNELSE ── */
+  .uddannelse {
+    padding: 2rem 1.25rem;
+  }
+
+  /* ── REVIEWS ── */
+  .reviews {
+    padding: 2rem 1.25rem;
+  }
+  .reviews-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* ── KONTAKT ── */
+  .kontakt-section {
+    padding: 2rem 1.25rem;
+  }
+
