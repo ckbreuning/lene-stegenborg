@@ -176,7 +176,7 @@ function visBehandling(behandling) {
     <li>Antal Sessioner: ${behandling.acf.antal_sessioner}</li>
 </ul>
 
-<a href="../kontakt.html">Kontakt</a>
+<a href="./kontakt.html">Kontakt</a>
 </div>
 
 </section>
