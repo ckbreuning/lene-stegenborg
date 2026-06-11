@@ -635,7 +635,7 @@ a.footer-row:hover {
         img {
             object-fit: cover;
             max-height: 100%;
-            width: 100%;
+            max-width: 100% !important;
         }
     }
 }
@@ -807,6 +807,7 @@ a.footer-row:hover {
         }
     }
 
+
     .behandlingBody .related {
         display: flex;
         flex-direction: column;
@@ -826,31 +827,32 @@ a.footer-row:hover {
 
 
     @media (max-width: 600px) {
-        .behandlingBody header {
-            img {
-                width: 600px;
-            }
-        }
-
-        .behandlingBody .bMain {
-            padding: var(--SmallSpacer);
-
-            .related img {
-                height: 250px;
-                width: 600px;
-
-                .related a {
-                    display: block;
-                    padding: var(--SmallSpacer);
-                    text-align: center;
-                    margin-bottom: 3rem;
-                }
-
-
-
-
-            }
-
-        }
+@media (max-width: 600px) {
+    html, body {
+        overflow-x: hidden;
     }
+
+    .behandlingBody header img {
+        width: 100%;
+        height: 40vh;
+        object-fit: cover;
+    }
+
+    .behandlingBody .bMain{
+        padding: var(--SmallSpacer) 10px;
+    }
+
+    .behandlingBody .related .relatedCard {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .behandlingBody .related .relatedCard img {
+        width: 100%;
+        height: 200px;
+    }
+}
+
+    }
+
 }
