@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lene Stegenborg - Kontakt</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/kontakt.css" />
+    <script src="./assets/js/app.js" defer></script>
+    <script src="./assets/js/kontakt.js" defer></script>
+    <!-- Google Fonts: Inika og Inria Serif — https://fonts.google.com -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome ikoner — https://fontawesome.com/docs/web/use-with/cdn-js -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body class="kontaktBody">
+
+    <!--  NAV  -->
+    <div class="site-nav">
+        <nav class="nav-inner">
+            <a href="#" class="nav-logo">
+                <img src="./assets/img/logo.webp" alt="Lene Stegenborg – Spirituel virksomheds coach">
+            </a>
+            <ul class="nav-links">
+                <li><a href="./index.html">Hjem</a></li>
+                <li><a href="./behandlinger.html">Behandlinger</a></li>
+                <li><a href="./praktiskinfo.html">Praktisk Info</a></li>
+                <li><a href="./om-mig.html">Om Mig</a></li>
+                <li><a href="./kontakt.html">Kontakt</a></li>
+            </ul>
+            <div class="burgermenu">
+                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </nav>
+        <div class="dropdown">
+            <a href="./index.html">Hjem</a>
+            <a href="./behandlinger.html">Behandlinger</a>
+            <a href="./praktiskinfo.html">Praktisk Info</a>
+            <a href="./om-mig.html">Om Mig</a>
+            <a href="./kontakt.html">Kontakt</a>
+        </div>
+    </div>
+
+    <!-- MAIN INDHOLD -->
+    <main class="kontaktMain">
+        <h1>Kontakt</h1>
+
+        <section class="kontaktGrid">
+
+            <!-- VENSTRE: Info -->
+            <div class="kontaktInfo">
+                <h2>Find os</h2>
+                <ul class="infoListe">
+                    <li>
+                        <!-- Font Awesome: fa-location-dot — https://fontawesome.com/icons/location-dot -->
+                        <i class="fa-solid fa-location-dot ikon"></i>
+                        <span>Adresse — Vej 1, 0000 By</span>
+                    </li>
+                    <li>
+                        <!-- Font Awesome: fa-phone — https://fontawesome.com/icons/phone -->
+                        <i class="fa-solid fa-phone ikon"></i>
+                        <span>Tlf. — +45 00 00 00 00</span>
+                    </li>
+                    <li>
+                        <!-- Font Awesome: fa-envelope — https://fontawesome.com/icons/envelope -->
+                        <i class="fa-solid fa-envelope ikon"></i>
+                        <span>Email — info@klinik.dk</span>
+                    </li>
+                </ul>
+
+                <h2>Åbningstider</h2>
+                <table class="aabningstider">
+                    <tr>
+                        <td>Mandag</td>
+                        <td>09:00 – 18:00</td>
+                    </tr>
+                    <tr>
+                        <td>Tirsdag</td>
+                        <td>09:00 – 18:00</td>
+                    </tr>
+                    <tr>
+                        <td>Onsdag</td>
+                        <td>09:00 – 18:00</td>
+                    </tr>
+                    <tr>
+                        <td>Torsdag</td>
+                        <td>09:00 – 18:00</td>
+                    </tr>
+                    <tr>
+                        <td>Fredag</td>
+                        <td>09:00 – 16:00</td>
+                    </tr>
+                </table>
+
+                <!-- Google Maps embed iframe — https://developers.google.com/maps/documentation/embed/get-started -->
+                <div class="kortWrapper">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2166.0!2d10.001!3d57.001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTfCsDAwJzAwLjAiTiAxMMKwMDAnMDAuMCJF!5e0!3m2!1sda!2sdk!4v1620000000000!5m2!1sda!2sdk"
+                        width="100%" height="180" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade" title="Kort over klinikken">
+                    </iframe>
+                </div>
+            </div>
+
+            <!-- HØJRE: Kontaktformular -->
+            <div class="kontaktFormular">
+                <form id="kontaktForm" novalidate>
+                    <div class="formGruppe">
+                        <label for="navn">Fulde navn *</label>
+                        <input type="text" id="navn" name="navn" placeholder="..." required />
+                        <span class="fejl" id="navnFejl"></span>
+                    </div>
+                    <div class="formGruppe">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" placeholder="..." required />
+                        <span class="fejl" id="emailFejl"></span>
+                    </div>
+                    <div class="formGruppe">
+                        <label for="telefon">Telefonnummer *</label>
+                        <input type="tel" id="telefon" name="telefon" placeholder="..." required />
+                        <span class="fejl" id="telefonFejl"></span>
+                    </div>
+                    <div class="formGruppe">
+                        <label for="besked">Besked *</label>
+                        <textarea id="besked" name="besked" rows="6" placeholder="..." required></textarea>
+                        <span class="fejl" id="beskedFejl"></span>
+                    </div>
+                    <button type="submit" class="sendKnap">Send</button>
+                    <p class="successBesked" id="successBesked">Tak! Din besked er sendt.</p>
+                </form>
+            </div>
+
+        </section>
+    </main>
+
+    <!--  FOOTER  -->
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-info">
+                <div class="footer-logo">
+                    <img src="./assets/img/logo.webp" alt="Lene Stegenborg – Spirituel virksomheds coach">
+                </div>
+                <div class="footer-contacts">
+                    <a class="footer-row" href="tel:+4553294999">
+                        <i class="fa-solid fa-phone"></i>
+                        +45 53294999
+                    </a>
+                    <a class="footer-row" href="mailto:ls@lene-stegenborg.dk">
+                        <i class="fa-solid fa-envelope"></i>
+                        ls@lene-stegenborg.dk
+                    </a>
+                    <div class="footer-row">
+                        <i class="fa-solid fa-building"></i>
+                        36298006 (CVR)
+                    </div>
+                    <div class="footer-row">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Lyngbyvej 54b, 9520 Skørping, Danmark
+                    </div>
+                </div>
+            </div>
+            <div class="footer-map">
+                <iframe
+                    src="https://maps.google.com/maps?q=Lyngbyvej+54b,+9520+Sk%C3%B8rping,+Danmark&z=15&output=embed"
+                    loading="lazy" title="Kort over Lyngbyvej 54b, 9520 Skørping">
+                </iframe>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
